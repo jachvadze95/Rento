@@ -24,6 +24,8 @@ namespace Rento.Admin.Controllers
         {
             UserManager = userManager;
             SignInManager = signInManager;
+
+            var date = DateTime.Now;
         }
 
         public ApplicationSignInManager SignInManager
