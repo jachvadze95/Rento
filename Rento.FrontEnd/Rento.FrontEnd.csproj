@@ -1,0 +1,91 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+    <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\**" />
+    <Content Remove="wwwroot\**" />
+    <EmbeddedResource Remove="wwwroot\**" />
+    <None Remove="wwwroot\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\favicon.ico" />
+    <Content Include="wwwroot\rento\angular.json" />
+    <Content Include="wwwroot\rento\dist\favicon.ico" />
+    <Content Include="wwwroot\rento\dist\index.html" />
+    <Content Include="wwwroot\rento\e2e\tsconfig.json" />
+    <Content Include="wwwroot\rento\package-lock.json" />
+    <Content Include="wwwroot\rento\package.json" />
+    <Content Include="wwwroot\rento\src\app\app.component.css" />
+    <Content Include="wwwroot\rento\src\app\app.component.html" />
+    <Content Include="wwwroot\rento\src\Compontents\Map\map.component.html" />
+    <Content Include="wwwroot\rento\src\favicon.ico" />
+    <Content Include="wwwroot\rento\src\index.html" />
+    <Content Include="wwwroot\rento\src\Pages\Trip\trip.component.html" />
+    <Content Include="wwwroot\rento\tsconfig.app.json" />
+    <Content Include="wwwroot\rento\tsconfig.json" />
+    <Content Include="wwwroot\rento\tsconfig.spec.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\rento\.editorconfig" />
+    <None Include="wwwroot\rento\browserslist" />
+    <None Include="wwwroot\rento\dist\main-es2015.js" />
+    <None Include="wwwroot\rento\dist\main-es2015.js.map" />
+    <None Include="wwwroot\rento\dist\main-es5.js" />
+    <None Include="wwwroot\rento\dist\main-es5.js.map" />
+    <None Include="wwwroot\rento\dist\polyfills-es2015.js" />
+    <None Include="wwwroot\rento\dist\polyfills-es2015.js.map" />
+    <None Include="wwwroot\rento\dist\polyfills-es5.js" />
+    <None Include="wwwroot\rento\dist\polyfills-es5.js.map" />
+    <None Include="wwwroot\rento\dist\runtime-es2015.js" />
+    <None Include="wwwroot\rento\dist\runtime-es2015.js.map" />
+    <None Include="wwwroot\rento\dist\runtime-es5.js" />
+    <None Include="wwwroot\rento\dist\runtime-es5.js.map" />
+    <None Include="wwwroot\rento\dist\styles-es2015.js" />
+    <None Include="wwwroot\rento\dist\styles-es2015.js.map" />
+    <None Include="wwwroot\rento\dist\styles-es5.js" />
+    <None Include="wwwroot\rento\dist\styles-es5.js.map" />
+    <None Include="wwwroot\rento\dist\vendor-es2015.js" />
+    <None Include="wwwroot\rento\dist\vendor-es2015.js.map" />
+    <None Include="wwwroot\rento\dist\vendor-es5.js" />
+    <None Include="wwwroot\rento\dist\vendor-es5.js.map" />
+    <None Include="wwwroot\rento\e2e\protractor.conf.js" />
+    <None Include="wwwroot\rento\karma.conf.js" />
+    <None Include="wwwroot\rento\src\assets\.gitkeep" />
+    <None Include="wwwroot\rento\src\Pages\Trip\trip.component.less" />
+    <None Include="wwwroot\rento\src\styles.less" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="wwwroot\rento\e2e\src\app.e2e-spec.ts" />
+    <TypeScriptCompile Include="wwwroot\rento\e2e\src\app.po.ts" />
+    <TypeScriptCompile Include="wwwroot\rento\src\app\app.component.ts" />
+    <TypeScriptCompile Include="wwwroot\rento\src\app\app.module.ts" />
+    <TypeScriptCompile Include="wwwroot\rento\src\Compontents\Map\map.component.ts" />
+    <TypeScriptCompile Include="wwwroot\rento\src\environments\environment.prod.ts" />
+    <TypeScriptCompile Include="wwwroot\rento\src\environments\environment.ts" />
+    <TypeScriptCompile Include="wwwroot\rento\src\index.d.ts" />
+    <TypeScriptCompile Include="wwwroot\rento\src\main.ts" />
+    <TypeScriptCompile Include="wwwroot\rento\src\Pages\Trip\trip.component.ts" />
+    <TypeScriptCompile Include="wwwroot\rento\src\polyfills.ts" />
+    <TypeScriptCompile Include="wwwroot\rento\src\Routing\RounterConfig.ts" />
+    <TypeScriptCompile Include="wwwroot\rento\src\test.ts" />
+  </ItemGroup>
+
+</Project>
